@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/response.css">
+</head>
+
+<body>
+
+    <div class="canlendar_container">
+        <div class="js-calendar calendar">
+            <div class="month">
+                <i class="fas fa-angle-left prev"></i>
+                <div class="date">
+                    <h1></h1>
+                    <p></p>
+                </div>
+                <i class="fas fa-angle-right next"></i>
+            </div>
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="days">
+            </div>
+        </div>
+        <div class="todoWrap">
+            <div class="js-weather">
+                <img>
+                <span class="info"></span>
+                <span class="clock"></span>
+            </div>
+            <form class="addName">
+                <input type="text" placeholder="이름을 입력하세요" />
+            </form>
+            <span class="name"></span>
+            <div class="listWrap">
+                <form class="js_form">
+                    <input type="text" placeholder="add task" />
+                </form>
+                <div>
+                    <h2>해야할 일</h2>
+                    <ul id="pending"></ul>
+                </div>
+                <div>
+                    <h2>완료된 일</h2>
+                    <ul id="finished"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/weather.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/calendar.js"></script>
+    <script src="./js/todo.js"></script>
+</body>
+
+</html>

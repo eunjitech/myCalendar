@@ -1,0 +1,167 @@
+* {
+    font-family: 'Quicksand', 'Noto Sans KR', sans-serif;
+}
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(95, 159, 243);
+}
+
+/* 오버사이즈 */
+/* #over_size {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#f3e7e9, #e3eeff) no-repeat;
+}
+#over_size h1 {
+    font-size: 2em;
+    font-weight: bold;
+} */
+
+/* 공통속성 */
+.canlendar_container {
+    width: 100%;
+    height: 100vh;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.js-calendar {
+    width: 34rem;
+    height: 52rem;
+    background-color: rgb(32, 92, 170);
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+    border-radius: 10px 0 0 10px;
+    
+}
+.js-calendar img {
+    width: 50px;
+}
+.month {
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.2rem;
+    text-align: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid #eee;
+}
+.month i {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.month h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+.month p {
+    font-size: 1.6rem;
+}
+.weekdays {
+    width: 100%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+.weekdays div {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    width: calc(44.2rem / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+.days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+}
+.days div {
+    font-size: 1.4rem;
+    margin: 0.3rem;
+    width: calc(29.2rem / 7);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem #052052;
+    transition: background-color 0.2s;
+}
+.days div:hover {
+    border: 0.2rem solid rgb(212, 221, 233);
+    cursor: pointer;
+}
+.prev-date,
+.next-date {
+    opacity: 0.5;
+}
+.today {
+    background-color: #052052;
+}
+
+/* 날씨 */
+.js-weather {
+    display: flex;
+    align-items: center;
+    color: #000;
+    width: 100%;
+    margin: 0 auto;margin-bottom: 3rem;
+    
+}
+.js-weather img {
+    width:1px;
+    flex-grow: 1;
+}
+.js-weather span {
+    display: block;
+    font-size: 1.5rem;
+    color: #eee;
+    font-weight: 700;
+}
+.js-weather .info {
+    flex-grow: 1;
+    text-align: left;
+}
+.js-weather .clock {
+    text-align: right;
+    flex-grow: 2;
+}
+
+/* 투두리스트 */
+.js_form{text-align: center;
+    margin-top: 3rem;}
+.clicked{background-color: #9bb81c;}
+.todoWrap {height: 52rem;width: 39rem;background-color: rgb(32, 92, 170); border-radius: 0 10px 10px 0;box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4); padding: 10px}
+.addName{ text-align: center;}
+.addName input{width: 178px;height: 30px; }
+.name{height: 30px;display: block;font-size: 2rem;text-align: right;
+}
+.listWrap{display: none; overflow-y: scroll;
+    height: 33rem;}
+.listWrap div{margin-bottom: 1rem;}
+.listWrap div h2{margin-bottom: 1rem;}
+.listWrap span{font-size: 2rem;}
