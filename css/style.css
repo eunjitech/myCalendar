@@ -158,10 +158,11 @@ body {
 .todoWrap {height: 52rem;width: 39rem;background-color: rgb(32, 92, 170); border-radius: 0 10px 10px 0;box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4); padding: 10px}
 .addName{ text-align: center;}
 .addName input{width: 178px;height: 30px; }
-.name{height: 30px;display: block;font-size: 2rem;text-align: right;
+.name{height: 30px;display: block;font-size: 2rem;text-align: center;
 }
 .listWrap{display: none; overflow-y: scroll;
     height: 33rem;}
 .listWrap div{margin-bottom: 1rem;}
 .listWrap div h2{margin-bottom: 1rem;}
-.listWrap span{font-size: 2rem;}
+.listWrap span{font-size: 1.6rem;}
+#pending li{line-height: 3rem}

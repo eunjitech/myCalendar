@@ -37,7 +37,7 @@ function genericTask(task) {
     const span = document.createElement('span');
     const delBtn = document.createElement('button');
     span.innerText = "◾ " + task.text;
-    delBtn.innerText = "❎";
+    delBtn.innerText = " ❎";
     delBtn.addEventListener('click', handleDelete);
     li.append(span, delBtn);
     li.id = task.id;
