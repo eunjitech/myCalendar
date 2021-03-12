@@ -154,7 +154,7 @@ body {
 /* 투두리스트 */
 .js_form{text-align: center;
     margin-top: 3rem;}
-.clicked{background-color: #9bb81c;}
+.clicked{background-color: #D1B6E1;}
 .todoWrap {height: 52rem;width: 39rem;background-color: #58c9b9; border-radius: 0 10px 10px 0;box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4); padding: 10px}
 .addName{ text-align: center;}
 .addName input{width: 178px;height: 30px; }
