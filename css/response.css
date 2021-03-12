@@ -1,7 +1,9 @@
 @media (max-width: 800px){
     .canlendar_container{display: block;}
-    .js-calendar, .todoWrap{margin: 0 auto; border-radius: 10px;}
-    .todoWrap{width: 34rem}
+    .js-calendar, .todoWrap{margin: 0 auto; border-radius: 10px;width: 100%;}
+    .todoWrap{width:100%}
+    .weekdays div{width: calc(100% / 7);}
+    .days div{width: calc(100% / 7); margin: 0; }
 }
 
 /* @media (max-width:600px){
